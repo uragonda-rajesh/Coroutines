@@ -14,11 +14,11 @@ class ManActivity2ErrorHandling : AppCompatActivity() {
         setContentView(R.layout.activity_man_activity2_error_handling)
 
         //using superviserscope https://github.com/mitchtabian/Kotlin-Coroutine-Examples/tree/supervisor-job
-        useUupervisorJScope()
+        useSupervisorJScope()
         //exceptionHandling()
     }
 
-    fun useUupervisorJob(){
+    fun useSupervisorJob(){
 
         val scope = CoroutineScope( Dispatchers.IO)
         scope.launch {
@@ -32,7 +32,7 @@ class ManActivity2ErrorHandling : AppCompatActivity() {
             }
         }
     }
-    fun useUupervisorJScope(){
+    fun useSupervisorJScope(){
 
         val scope = CoroutineScope( Dispatchers.IO)
         scope.launch {
